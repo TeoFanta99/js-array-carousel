@@ -51,7 +51,7 @@ btnUp.addEventListener("click",
 
         } 
         
-        if (activeItem = 0) {
+        if (activeItem === 0) {
 
             items[activeItem].classList.remove("active");
 
