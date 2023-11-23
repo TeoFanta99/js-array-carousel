@@ -1,4 +1,33 @@
 // selezione degli elementi nel DOM
-const btnUp = document.getElementsByClassName("fa-chevron-up");
-const btnDown = document.getElementsByClassName("fa-chevron-down");
+const btnUp = document.querySelector(".fa-chevron-up");
+const btnDown = document.querySelector(".fa-chevron-down");
+const items = document.getElementsByClassName("item");
+console.log(items[0]);
 
+
+
+let activeItem = 0;
+
+
+// click al bottone down
+btnDown.addEventListener("click",
+
+    function() {
+
+        if (activeItem < items.length - 1) {
+
+            items[activeItem].classList.add("active");
+
+            activeItem++;
+
+            items[activeItem].classList.remove("active");
+
+            if (activeItem === items.length - 1) {
+                btnDown.classList.add("hidden")
+            }
+        }
+
+
+    }
+
+)
