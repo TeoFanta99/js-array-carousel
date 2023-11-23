@@ -21,6 +21,29 @@
     position: relative;
 }
 
+.items-container button{
+    background-color: rgba(0,0,0,0);
+    border: none;
+    cursor: pointer;
+}
+
+.items-container i {
+    background-color: lightgray;
+    padding: 7px;
+    border-radius: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.fa-chevron-up {
+    top: 0;
+}
+
+.fa-chevron-down {
+    bottom: 0;
+}
+
 img {
     width: 100%;
 }
