@@ -22,6 +22,16 @@ btnDown.addEventListener("click",
 
             items[activeItem].classList.add("active");
         }
+
+        if (activeItem === items.length -1) {
+
+            items[activeItem].classList.remove("active");
+
+            activeItem = 0;
+
+            items[activeItem].classList.add("active");
+
+        }
     }
 );
 
@@ -31,11 +41,21 @@ btnUp.addEventListener("click",
 
     function() {
 
-        if (activeItem <= items.length - 1) {
+        if (activeItem > 0) {
 
             items[activeItem].classList.remove("active");
 
             activeItem--;
+
+            items[activeItem].classList.add("active");
+
+        } 
+        
+        if (activeItem = 0) {
+
+            items[activeItem].classList.remove("active");
+
+            activeItem = 4;
 
             items[activeItem].classList.add("active");
         }
